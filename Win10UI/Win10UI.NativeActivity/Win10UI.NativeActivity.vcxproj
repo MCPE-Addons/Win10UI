@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6d1533bf-1240-44b1-a0be-0bb7d7d2726c}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>Win10UI</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>2.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_3_8</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_3_8</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_3_8</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_shared</UseOfStl>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_3_8</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_shared</UseOfStl>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <ThumbMode>Disabled</ThumbMode>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <TargetName>libcom.ksymc.win10ui</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <TargetName>libcom.ksymc.win10ui</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <TargetName>libcom.ksymc.win10ui</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <TargetName>libcom.ksymc.win10ui</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;EGL;</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\workspace\MCPE-Headers;C:\workspace\MCPE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>minecraftpe;mcpelauncher_tinysubstrate;%(LibraryDependencies)</LibraryDependencies>
+      <AdditionalLibraryDirectories>C:\workspace\MCPE\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>C:\workspace\MCPE-Headers;C:\workspace\MCPE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\workspace\MCPE\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LibraryDependencies>minecraftpe;mcpelauncher_tinysubstrate;%(LibraryDependencies)</LibraryDependencies>
+      <DebuggerSymbolInformation>OmitAllSymbolInformation</DebuggerSymbolInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>C:\workspace\MCPE-Headers;C:\workspace\MCPE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\workspace\MCPE\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LibraryDependencies>minecraftpe;mcpelauncher_tinysubstrate;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;EGL;</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;EGL;</LibraryDependencies>
+      <AdditionalLibraryDirectories>C:\workspace\MCPE\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;EGL;</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>C:\workspace\MCPE-Headers;C:\workspace\MCPE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>minecraftpe;mcpelauncher_tinysubstrate;%(LibraryDependencies)</LibraryDependencies>
+      <AdditionalLibraryDirectories>C:\workspace\MCPE\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hook\hook.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AABB.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Abilities.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AbstractScreen.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AdventureSettings.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\App.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AppPlatform.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AppPlatformListener.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AppPlatform_android.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AppPlatform_android23.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ArmorSlot.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Attribute.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AttributeBuff.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AttributeInstance.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AttributeInstanceDelegate.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\AttributeModifier.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BaseAttributeMap.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BaseScreen.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BatchedPacketSender.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Biome.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BlankButton.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Block.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BlockGraphics.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BlockPos.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BlockProperty.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BlockSource.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BlockSourceListener.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\BodyControl.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Button.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ButtonBlock.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ChestBlock.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ChestScreen.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ClientNetworkHandler.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ClientSkinInfoData.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Color.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\CommonTypes.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Container.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\CreativeItemCategory.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\CreativeMode.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Difficulty.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Dimension.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\DimensionId.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\DisconnectScreenController.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Enchant.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EnchantmentInstance.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EnchantUtils.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Entity.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityClassTree.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityDamageByBlockSource.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityDamageByChildEntitySource.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityDamageByEntitySource.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityDamageCause.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityDamageSource.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityRenderer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityShaderManager.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\EntityType.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ExhaustionAttributeDelegate.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Feature.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\FillingContainer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Fireball.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\FloatGoal.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GameCallbacks.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GameMode.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GameType.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GeneratorType.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GeometryGroup.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Goal.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GoalSelector.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GuiComponent.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GuiElement.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\GuiElementContainer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HealthAttributeDelegate.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HellDimension.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HitResult.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HudScreenController.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HumanoidMobRenderer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HumanoidModel.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HumanoidMonster.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\HungerAttributeDelegate.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\I18n.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\IceSpikeFeature.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\IConfigListener.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\InstantaneousAttributeBuff.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Inventory.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\InventoryPane.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Item.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ItemEntity.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ItemInstance.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\JumpControl.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LargeFireball.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LegacyClientNetworkHandler.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Level.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LevelData.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LevelEvent.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LevelListener.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LevelSettings.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Localization.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LocalPlayer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LookAtPlayerGoal.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\LookControl.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Material.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Minecraft.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MinecraftClient.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MinecraftInputHandler.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MinecraftKeyboardManager.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MinecraftScreenController.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MinecraftScreenModel.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MinecraftUISoundPlayer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Mob.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MobEffectInstance.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MobFactory.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MobRenderer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Model.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Monster.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MonsterRoomFeature.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\MoveControl.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\NameRegistry.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\NetEventCallback.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\NewType.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\NormalDimension.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Options.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\OptionsGroup.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\OptionsPane.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\OptionsScreen.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PackedScrollContainer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\AnimatePacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\ContainerClosePacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\EntityEventPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\MobArmorEquipmentPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\MobEquipmentPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\MovePlayerPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\Packet.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\PlayerActionPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\PlayerInputPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\RequestChunkRadiusPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\RiderJumpPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\packet\TextPacket.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ParticleType.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PathfinderMob.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PermissionsHandler.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PigZombie.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Player.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PlayerModel.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PropertyBag.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\PumpkinFeature.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Random.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\RandomLookAroundGoal.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\RandomStrollGoal.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\RemovedEntityDamageByType.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Resource.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ResourceLocation.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Screen.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ScreenChooser.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ScreenController.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ScreenRenderer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ScreenView.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ScreenViewAdapter.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ScrollingPane.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Sensing.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ServerLevel.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ServerNetworkHandler.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\ServerPlayer.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\SharedAttributes.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\SharedConstants.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\SkinInfoData.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\SkinInfoFactory.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\SmallFireball.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\StickDirection.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\StringHash.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\SurvivalMode.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\TemporalAttributeBuff.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\UIControl.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\UIControlFactory.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\UIDefRepository.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\UIPropertyBag.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Util.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Vec2.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Vec3.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Vibration.h" />
+    <ClInclude Include="..\..\..\..\MCPE-Headers\Zombie.h" />
+    <ClInclude Include="hook\hook.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
